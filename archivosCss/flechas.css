@@ -1,0 +1,52 @@
+/********************UP-DOWN-LEFT-RIGHT*************************/
+
+.kenAnimacionReposo {
+	background: url('../imagenes/ken.png') -400px -155px;
+	animation: reposo .6s steps(3) infinite;
+}
+
+@keyframes reposo {
+	to {
+		background-position: 0px -165px;
+	}
+}
+
+.saltar {
+	background: url('../imagenes/ken.png') 0 -1305px;
+	animation: saltarKen .7s steps(5);
+}
+
+@keyframes saltarKen {
+	from {
+		bottom: 200px;
+		left: var(--derechaIzquierda);
+	}
+
+	to {
+		bottom: 20px;
+		left: var(--derechaIzquierda);
+		background-position: -700px -1305px;
+	}
+}
+
+.derechaIzquierda {
+	--derechaIzquierda: calc(50% - 20px);
+	background: url('../imagenes/ken.png') -400px -155px;
+	animation: derechaIzquierdaKen 1s steps(3);
+}
+
+@keyframes derechaIzquierdaKen {
+	to {
+		left: var(--derechaIzquierda);
+		background-position: 0px -155px;
+	}
+}
+
+.abajo {
+	--derechaIzquierda: calc(50% - 20px);
+	background: url('../imagenes/ken.png') 0 -1470px;
+}
+
+.kenAnimacionReposo, .saltar, .derechaIzquierda, .abajo {
+	background-size: 1000px;
+}
