@@ -1,0 +1,61 @@
+.lanzar-bola {
+	background-image: url('./assets/imagenes/ken.png');
+	background-position: 0 0; /*110, 216, 323*/
+
+	bottom: 28px;
+	animation: posicionManos .5s steps(3);
+}
+
+@keyframes posicionManos {
+	to {
+		background-position: -323px 0;
+	}
+}
+
+.bola {
+	position: absolute;
+	bottom: 70px;
+
+	width: 80px;
+	height: 70px;
+
+	background-image: url('./assets/imagenes/ken.png');
+	background-size: 800%;
+	background-position: 10px 620px; /*10, 85*/
+	
+	transition: left .5s ease-in;
+	animation: kamekameahAnimate .2s steps(1) forwards;
+}
+
+@keyframes kamekameahAnimate {
+	100% {
+		background-position: -85px 620px;
+	}
+}
+
+.estallido {
+	// border: 1px solid green;
+	position: absolute;
+	bottom: 70px;
+	left: calc(100% - 83px);
+	
+	width: 80px;
+	height: 70px;
+
+	background-image: url('./assets/imagenes/ken.png');
+	background-size: 840%;
+	// background-position: 0px 540px;/*90, 200, 290*/
+	background-position: 26px 540px;/*+24, -170, -200, -266*/
+	
+	animation: estallidoAnimate .5s steps(3) forwards;
+}
+
+@keyframes estallidoAnimate {
+	from {
+		background-position: 26px 540px;
+	}
+
+	to {
+		background-position: -266px 540px;
+	}
+}

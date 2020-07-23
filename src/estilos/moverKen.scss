@@ -1,0 +1,31 @@
+.moverIzquierdDerecha {
+	background-position: 0px -115px;/*0, 105, 210, 315*/
+
+	animation: posicionBase .5s infinite steps(3);
+}
+
+@keyframes posicionBase {
+	100% {
+		background-position: -315px -115px;
+	}
+}
+
+.agacharse {
+	background-position: 0px 120px;
+}
+
+.saltar {
+	background-position: 0px 237px; /*90, 205, 310, 410, 510, 620*/
+	animation: posicionSaltar 1s steps(6);
+}
+
+@keyframes posicionSaltar {
+	from {
+		bottom: 200px;
+	}
+
+	to {
+		bottom: 35px;
+		background-position: -620px 237px;
+	}
+}

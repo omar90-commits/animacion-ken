@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.contenedor {
+	// background: url('./assets/imagenes/bg2.jpg') center bottom;
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// width: 100vw;
+	// height: 80vh;
+	// position: relative;
+	// border: 1px solid red;
+
+	background: url('./assets/imagenes/bg2.jpg') center -200px;
+	// background-repeat: no-repeat;
+	width: 99.9%;
+	height: 35em;
+	border: 1px solid transparent;
+	position: relative;
+}
+
+.ken {
+	// border: 1px solid red;
+	display: flex;
+	justify-content: center;
+
+	width: 90px;
+	height: 120px;
+	
+	background-image: url('./assets/imagenes/ken.png');
+	background-size: 800%;
+
+	position: absolute;
+	bottom: 28px;
+	left: calc(50% - 45px);
+}

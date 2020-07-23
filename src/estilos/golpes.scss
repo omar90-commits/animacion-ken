@@ -1,0 +1,83 @@
+.puño {
+	background-image: url('./assets/imagenes/ken.png');
+	background-position: -5px -233px;/*120, 240*/
+
+	animation: puñoAnimation .25s steps(2);
+}
+
+@keyframes puñoAnimation {
+	to {
+		background-position: -240px -233px;
+	}
+}
+
+.patada {
+	background-image: url('./assets/imagenes/ken.png');
+	background-size: 720%;
+	background-position: 0px 438px;/*90, 186, 286, 375*/
+
+	animation: patadaAnimation .5s steps(4);
+}
+
+@keyframes patadaAnimation {
+	to {
+		background-position: -375px 438px;
+	}
+}
+
+.patada-giratoria {
+	width: 120px;
+	height: 140px;
+
+	background-image: url('./assets/imagenes/ken.png');
+	background-position: 0px 403px;/*110, 232, 355, 465*/
+	background-size: 680%;
+
+	animation: patadaGiratoriaAnimation .6s steps(5);
+}
+
+@keyframes patadaGiratoriaAnimation {
+	to {
+		background-position: -578px 403px;
+	}
+}
+
+.patada-voladora {
+	height: 150px;
+	width: 95px;
+	background-image: url('./assets/imagenes/ken-tatsumaki-senpuu-kyaku.png');
+	background-position: 0 5px;
+	background-size: 1400%;
+
+	animation: patadaVoladoraAnimation 1.2s steps(13);
+}
+
+@keyframes patadaVoladoraAnimation {
+	from {
+		bottom: 200px;
+	}
+
+	to {
+		bottom: 50px;
+		background-position: -1340px -16px;
+	}
+}
+
+.puño-fuego {
+	height: 160px;
+	background-image: url('./assets/imagenes/ken-shoryuken.png');
+	background-position: 0px 0px;/*100, 200, 310, 410, 520, 630*/
+
+	animation: puñoFuegoAnimation 1s steps(7);
+}
+
+@keyframes puñoFuegoAnimation {
+	from {
+		bottom: 200px;
+	}
+
+	to {
+		bottom: 50px;
+		background-position: -730px 0px;
+	}
+}
