@@ -1,13 +1,5 @@
-#Crud
+# animacion-ken
 
-Un crud, hecho con javascript.
+In the project directory, you can run:
 
-##Comenzando
-
-En el directorio del proyecto, puede ejecutar:
-
-``npm start``
-
-
-Ejecuta la aplicación en modo de desarrollo.
-Abra http://localhost:3100 para verlo en el navegador.
+## npm start
